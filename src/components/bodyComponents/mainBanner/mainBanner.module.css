@@ -1,0 +1,15 @@
+.mainBanner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 0 50px 0;
+}
+
+.mainBanner h1 {
+    color: rgba(149,76,214,1);
+}
+
+.mainBanner img {
+    width: 860px;
+
+}

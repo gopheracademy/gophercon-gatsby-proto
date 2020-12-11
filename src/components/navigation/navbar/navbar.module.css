@@ -1,0 +1,36 @@
+.navbar {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index:90;
+}
+
+.leftSection {
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    height: 100%;
+}
+
+.leftSection h1 {
+    color: white;
+}
+
+
+.navbar nav {
+    height: 100%;
+}
+
+.logo {
+    height: 200%;
+}
+

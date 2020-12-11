@@ -6,5 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `jsondata`,
+        path: `./src/data`,
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+  ],
 }

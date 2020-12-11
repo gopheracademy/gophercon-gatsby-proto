@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#gatsby-focus-wrapper {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 70px auto fit-content(8rem);
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+    min-height: 100vh;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
