@@ -1,6 +1,6 @@
 import React from "react"
 
-import Logo from "../logo"
+import Logo from "../Logo"
 import NavigationItems from "../navigationItems"
 
 import styles from "./navbar.module.css"
@@ -8,7 +8,7 @@ import styles from "./navbar.module.css"
 const navbar = (props) => (
     <header
         className={styles.navbar}
-        style={{backgroundColor: props.navigationData.bg}}
+        style={{ backgroundColor: props.navigationData.bg }}
     >
         <div className={styles.leftSection}>
             <div className={styles.logo}>
