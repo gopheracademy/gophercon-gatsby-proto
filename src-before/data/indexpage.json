@@ -1,0 +1,317 @@
+{
+  "siteWideProps":{
+    "footer":{
+      "backgroundColor":"#333333",
+      "disclaimer":"Copyright GopherCon 2051",
+      "links":[
+        {
+          "id":1,
+          "name":"Need a ticket?",
+          "linkTo":"/tickets",
+          "onClick":""
+        },
+        {
+          "id":2,
+          "name":"Contact the organizer",
+          "linkTo":"",
+          "onClick":"contactForm"
+        }
+      ]
+    }
+  },
+  "pages":[
+    {
+      "id":1,
+      "page":"index",
+      "seo":{
+        "title":"GopherCon - proposed website",
+        "description":"The non-official site of the GopherCon (only as the proposed version for the future development)",
+        "author":"Alex, the friendly gopher ;)"
+      },
+      "header":
+        {
+          "bg":"black",
+          "logoImg":"gophercon2020-logo.webp",
+          "logoAlt": false,
+          "logoLnk":"/",
+          "conferenceTitle": "GopherCon 2051",
+          "links":[
+            {
+              "id":1,
+              "name":"TOPICS",
+              "linkTo":"/topics/",
+              "sublinks": []
+            },
+            {
+              "id":2,
+              "name":"DISCOVER",
+              "linkTo":"/discover/",
+              "sublinks":[
+                {
+                  "id": 1,
+                  "name":"AGENDA",
+                  "linkTo":"/agenda"
+                },
+                {
+                  "id":2,
+                  "name":"SPONSORS",
+                  "linkTo":"/sponsors"
+                },
+                {
+                  "id":3,
+                  "name":"PREVIOUS EVENTS",
+                  "linkTo":"/previous-events"
+                }
+              ]
+            }
+          ]
+        },
+      "testsection": [{"id": false}],
+      "sections":[
+        {
+          "id":1,
+          "sectionType":"mainBanner",
+          "sectionData": {
+            "textH1":"Welcome to the official page of the GopherCon",
+            "backgroundColor":"rgba(214,184,240,1)",
+            "imgPath":"https://s3.amazonaws.com/bizzabo.users.files/0aRpnT1T6WDavN3uuEUl_Banner%20Website%20-%201920%20x%201080.png",
+            "imgAlt": false
+          }
+        },
+        {
+          "id":2,
+          "sectionType":"textBlockBtn",
+          "sectionData": {
+            "textH1":"GoVirCon Store",
+            "textP":"GoVirCon wouldn't be GopherCon without swag! So we've designed some attire and swag you can purchase as a memento of this year's conference. Typically our in-person store raises funds for our scholarship program, but since online merchandising is more expensive, this store is just for fun!  ",
+            "btnText":"Read more",
+            "btnLinkTo":"/gophercon-store",
+            "backgroundColor":"#f1f1f1"
+          }
+        },
+        {
+          "id":3,
+          "sectionType":"purchase",
+          "sectionData": {
+            "ticketSalesOpen": true,
+            "ticketTypes":[
+              {
+                "id":1,
+                "ticketType":"purchase",
+                "ticketName":"Student discounted",
+                "price":99.99
+              },
+              {
+                "id":2,
+                "ticketType":"purchase",
+                "ticketName":"Regular ticket",
+                "price":499.99
+              },
+              {
+                "id":3,
+                "ticketType":"purchase",
+                "ticketName":"VIP ticket ",
+                "price":999.99
+              },
+              {
+                "id":4,
+                "ticketType":"prepaid",
+                "ticketName":"Redeem your voucher",
+                "price":0
+              }
+            ],
+            "backgroundColor":"#f1f1f1"
+          }
+        },
+        {
+          "id":4,
+          "sectionType":"featuredTalks",
+          "sectionData": {
+            "textH1":"The following key talks are the most awaited:",
+            "talksCards":[
+              {
+                "id":1,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583289369/e7typxgajbfl3c3gn3hw.jpg",
+                "imgAlt": false,
+                "topic":"Typing Generic Go",
+                "author":"Robert Griesemer",
+                "position":"Software Engineer",
+                "company":"Google Inc",
+                "brief":"Earlier this year the Go team announced the latest generics design draft. The key feature is the notion of constrained type parameters which enable generic functions and types. In this talk we explain how type parameters fit into Go's existing type system and how a compiler goes about type-checking generic Go code. If you are interested in a deeper understanding of generics for Go, this talk is for you!"
+              },
+              {
+                "id":2,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "topic":"The Quest for the Fastest Deployment Time",
+                "author":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "brief":"When a developer changes a line of code, how long does it take for that code to run in their development cluster? L Körbes, an expert in Kubernetes development tooling, has seen the answers to that question vary between 1 second and… infinity. So how do you get your team’s code to stay on the 1 second side? In this talk, L will explore every avenue to make our “from code change to process running” benchmark faster, and show you whether to…"
+              },
+              {
+                "id":3,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583294158/np2bnmhxasavzxf8qq9n.png",
+                "imgAlt": false,
+                "topic":"Write Once, Use Many: A Simple & Useful Package to Call Internal HTTP APIs",
+                "author":"Michael Richman",
+                "position":"Sr. Tech Lead",
+                "company":"Bitly",
+                "brief":"It’s a common pattern at most engineering organizations to have one service making calls to other, internal services. This talk is an introduction to a simple but powerful package we wrote at Bitly to make sure our calls are consistent, simple to write and easy to extend and maintain."
+              },
+              {
+                "id":4,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "topic":"The Quest for the Fastest Deployment Time",
+                "author":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "brief":"When a developer changes a line of code, how long does it take for that code to run in their development cluster? L Körbes, an expert in Kubernetes development tooling, has seen the answers to that question vary between 1 second and… infinity. So how do you get your team’s code to stay on the 1 second side? In this talk, L will explore every avenue to make our “from code change to process running” benchmark faster, and show you whether to…"
+              },
+              {
+                "id":5,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583289369/e7typxgajbfl3c3gn3hw.jpg",
+                "imgAlt": false,
+                "topic":"Typing Generic Go",
+                "author":"Robert Griesemer",
+                "position":"Software Engineer",
+                "company":"Google Inc",
+                "brief":"Earlier this year the Go team announced the latest generics design draft. The key feature is the notion of constrained type parameters which enable generic functions and types. In this talk we explain how type parameters fit into Go's existing type system and how a compiler goes about type-checking generic Go code. If you are interested in a deeper understanding of generics for Go, this talk is for you!"
+              },
+              {
+                "id":6,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583294158/np2bnmhxasavzxf8qq9n.png",
+                "imgAlt": false,
+                "topic":"Write Once, Use Many: A Simple & Useful Package to Call Internal HTTP APIs",
+                "author":"Michael Richman",
+                "position":"Sr. Tech Lead",
+                "company":"Bitly",
+                "brief":"It’s a common pattern at most engineering organizations to have one service making calls to other, internal services. This talk is an introduction to a simple but powerful package we wrote at Bitly to make sure our calls are consistent, simple to write and easy to extend and maintain."
+              },
+              {
+                "id":7,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583289369/e7typxgajbfl3c3gn3hw.jpg",
+                "imgAlt": false,
+                "topic":"Typing Generic Go",
+                "author":"Robert Griesemer",
+                "position":"Software Engineer",
+                "company":"Google Inc",
+                "brief":"Earlier this year the Go team announced the latest generics design draft. The key feature is the notion of constrained type parameters which enable generic functions and types. In this talk we explain how type parameters fit into Go's existing type system and how a compiler goes about type-checking generic Go code. If you are interested in a deeper understanding of generics for Go, this talk is for you!"
+              },
+              {
+                "id":8,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "topic":"The Quest for the Fastest Deployment Time",
+                "author":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "brief":"When a developer changes a line of code, how long does it take for that code to run in their development cluster? L Körbes, an expert in Kubernetes development tooling, has seen the answers to that question vary between 1 second and… infinity. So how do you get your team’s code to stay on the 1 second side? In this talk, L will explore every avenue to make our “from code change to process running” benchmark faster, and show you whether to…"
+              }
+            ]
+          }
+        },
+        {
+          "id":5,
+          "sectionType":"featuredSpeakers",
+          "sectionData": {
+            "textH1":"Meet our featured speakers:",
+            "speakersCards":[
+              {
+                "id":1,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583289369/e7typxgajbfl3c3gn3hw.jpg",
+                "imgAlt": false,
+                "speaker":"Robert Griesemer",
+                "position":"Software Engineer",
+                "company":"Google Inc",
+                "speakerBio":"Robert Griesemer is one of the designers of the Go programming language. Before Go, Robert worked on Google's V8 JavaScript engine and the domain-specific language Sawzall. He was a founding member of the team that created the Java HotSpot virtual machine and the Strongtalk system. Currently, Robert is mostly focusing on generics for Go. He likes things that \"just work.\""
+              },
+              {
+                "id":2,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "speaker":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "speakerBio":"L Körbes does DevRel at Tilt. Having worked at both Garden and Tilt—two of the few companies 100% focused on development experience with Kubernetes—L is immersed in developer-facing issues, and constantly working on them. L got their start with Kubernetes by writing code for kubectl, in a SIG CLI internship. They've since spoken about Go and Kubernetes at many world-famous events."
+              },
+              {
+                "id":3,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583294158/np2bnmhxasavzxf8qq9n.png",
+                "imgAlt": false,
+                "speaker":"Michael Richman",
+                "position":"Sr. Tech Lead",
+                "company":"Bitly",
+                "speakerBio":"Michael is a senior engineer at Bitly. He’s been working in Go for about 5 years. He’s been writing software for about 20 years. Bitly, the link management platform, was an early adopter of Go. Michael lives in Denver and works in the Bitly Denver office."
+              },
+              {
+                "id":4,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "speaker":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "speakerBio":"L Körbes does DevRel at Tilt. Having worked at both Garden and Tilt—two of the few companies 100% focused on development experience with Kubernetes—L is immersed in developer-facing issues, and constantly working on them. L got their start with Kubernetes by writing code for kubectl, in a SIG CLI internship. They've since spoken about Go and Kubernetes at many world-famous events."
+              },
+              {
+                "id":5,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583289369/e7typxgajbfl3c3gn3hw.jpg",
+                "imgAlt": false,
+                "speaker":"Robert Griesemer",
+                "position":"Software Engineer",
+                "company":"Google Inc",
+                "speakerBio":"Robert Griesemer is one of the designers of the Go programming language. Before Go, Robert worked on Google's V8 JavaScript engine and the domain-specific language Sawzall. He was a founding member of the team that created the Java HotSpot virtual machine and the Strongtalk system. Currently, Robert is mostly focusing on generics for Go. He likes things that \"just work.\""
+              },
+              {
+                "id":6,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583294158/np2bnmhxasavzxf8qq9n.png",
+                "imgAlt": false,
+                "speaker":"Michael Richman",
+                "position":"Sr. Tech Lead",
+                "company":"Bitly",
+                "speakerBio":"Michael is a senior engineer at Bitly. He’s been working in Go for about 5 years. He’s been writing software for about 20 years. Bitly, the link management platform, was an early adopter of Go. Michael lives in Denver and works in the Bitly Denver office."
+              },
+              {
+                "id":7,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583289369/e7typxgajbfl3c3gn3hw.jpg",
+                "imgAlt": false,
+                "speaker":"Robert Griesemer",
+                "position":"Software Engineer",
+                "company":"Google Inc",
+                "speakerBio":"Robert Griesemer is one of the designers of the Go programming language. Before Go, Robert worked on Google's V8 JavaScript engine and the domain-specific language Sawzall. He was a founding member of the team that created the Java HotSpot virtual machine and the Strongtalk system. Currently, Robert is mostly focusing on generics for Go. He likes things that \"just work.\""
+              },
+              {
+                "id":8,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "speaker":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "speakerBio":"L Körbes does DevRel at Tilt. Having worked at both Garden and Tilt—two of the few companies 100% focused on development experience with Kubernetes—L is immersed in developer-facing issues, and constantly working on them. L got their start with Kubernetes by writing code for kubectl, in a SIG CLI internship. They've since spoken about Go and Kubernetes at many world-famous events."
+              },
+              {
+                "id":9,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1583294158/np2bnmhxasavzxf8qq9n.png",
+                "imgAlt": false,
+                "speaker":"Michael Richman",
+                "position":"Sr. Tech Lead",
+                "company":"Bitly",
+                "speakerBio":"Michael is a senior engineer at Bitly. He’s been working in Go for about 5 years. He’s been writing software for about 20 years. Bitly, the link management platform, was an early adopter of Go. Michael lives in Denver and works in the Bitly Denver office."
+              },
+              {
+                "id":10,
+                "imgPath":"https://res.cloudinary.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1601322676/tlzrrz4h9eisybi3cy3b.png",
+                "imgAlt": false,
+                "speaker":"L Körbes",
+                "position":"DevRel",
+                "company":"Tilt",
+                "speakerBio":"L Körbes does DevRel at Tilt. Having worked at both Garden and Tilt—two of the few companies 100% focused on development experience with Kubernetes—L is immersed in developer-facing issues, and constantly working on them. L got their start with Kubernetes by writing code for kubectl, in a SIG CLI internship. They've since spoken about Go and Kubernetes at many world-famous events."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

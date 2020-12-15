@@ -1,36 +1,21 @@
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import { usePageMetadata } from "../hooks/use-page-metadata.js"
+import Layout from '../components/layout'
 
-import SEO from '../components/seo/'
-import Navbar from '../components/navigation/navbar'
-import Bodysections from '../components/bodyBuilder'
-import Footer from '../components/footer'
+import Amplify from 'aws-amplify'
+import config from '../aws-exports'
+Amplify.configure(config)
 
-export default () => {
-    const pageBuildingProps = usePageMetadata()
+const IndexPage = () => (
+  <Layout>
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site with multi-user authentication powered by <a href="https://amplify.aws">AWS Amplify</a></p>
+    <p>Create a new account: <Link to="/app/signup">Sign Up</Link></p>
+    <Link to="/app/login">Sign In</Link><br />
+    <Link to="/app/home">Home</Link><br />
+    <Link to="/app/profile">Your profile</Link>
+  </Layout>
+)
 
-    return (
-        <>
-            <SEO title={pageBuildingProps.seo.title}
-                description={pageBuildingProps.seo.description}
-            />
-            <Navbar navigationData={pageBuildingProps.header} />
-            <main>
-                { pageBuildingProps.sections.map (section => (
-                    <Bodysections
-                        key={section.id}
-                        pageId={pageBuildingProps.id}
-                        sectionId={section.id}
-                        sectionType={section.sectionType}
-                        sectionData={section.sectionData}
-                    />
-                ))}
-            </main>
-            <Footer
-                pageId={pageBuildingProps.id}
-            />
-        </>
-
-    )
-}
+export default IndexPage
